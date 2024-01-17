@@ -1,47 +1,45 @@
-let victory = 390;
-let defeat = 270;
+let victory = 292;
+let defeat = 210;
+let winrateResult = winrateCalculator(victory, defeat);
+let eloResult =  eloCheck(winrateResult);
 
-function winrateCalculator(victory,defeat) 
+function winrateCalculator(numA, numB)
  {
-   victory - defeat;
-    return winrate;
+  let winrate = numA - numB;
+   return winrate
  }
 
-let winrate
-
- function eloCheck()
+function eloCheck(winrateResult)
   {
-   if (winrate <= 10)
-    {
-     elo = "Ferro";
-    }
-   if (winrate >= 11 && xp <= 20)
-    { 
-     elo = "Bronze";
-    }
-   if (winrate >= 21 && xp <= 50)
-    {
-     elo = "Prata";
-    }
-   if (winrate >= 51 && xp <= 80)
-    {
-     elo = "Ouro";
-    }
-   if (winrate >= 81 && xp <= 90)
-    {
-     elo = "Diamante";
-    }
-   if (winrate >= 91 && xp <= 100)
-    {
-     elo = "Lendário";
-    }
-   if (winrate >= 101)
-    {
-     elo = "Imortal";
-    }
-     return elo;
- } 
+    if (winrateResult <= 10)
+     {
+      elo = "Ferro";
+     }
+      if (winrateResult >= 11 && winrateResult <= 20)
+       { 
+        elo = "Bronze";
+       }
+        if (winrateResult >= 21 && winrateResult <= 50)
+         {
+          elo = "Prata";
+         }
+          if (winrateResult >= 51 && winrateResult <= 80)
+           {
+            elo = "Ouro";
+           }
+            if (winrateResult >= 81 && winrateResult <= 90)
+             {
+              elo = "Diamante";
+             }
+              if (winrateResult >= 91 && winrateResult <= 100)
+               {
+                elo = "Lendário";
+               }
+                if (winrateResult >= 101)
+                 {
+                  elo = "Imortal";
+                 }
+                  return elo;
+  }
 
-let elo 
-
- console.log("Your winrate is " + winrate + ", your elo is " + elo)
+ console.log("Your winrate is " + winrateResult + " and your elo is " + elo)
