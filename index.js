@@ -15,27 +15,27 @@ function eloCheck(winrateResult)
      {
       elo = "Ferro";
      }
-      if (winrateResult >= 11 && winrateResult <= 20)
+      else if (winrateResult >= 11 && winrateResult <= 20)
        { 
         elo = "Bronze";
        }
-        if (winrateResult >= 21 && winrateResult <= 50)
+        else if (winrateResult >= 21 && winrateResult <= 50)
          {
           elo = "Prata";
          }
-          if (winrateResult >= 51 && winrateResult <= 80)
+          else if (winrateResult >= 51 && winrateResult <= 80)
            {
             elo = "Ouro";
            }
-            if (winrateResult >= 81 && winrateResult <= 90)
+            else if (winrateResult >= 81 && winrateResult <= 90)
              {
               elo = "Diamante";
              }
-              if (winrateResult >= 91 && winrateResult <= 100)
+              else if (winrateResult >= 91 && winrateResult <= 100)
                {
                 elo = "Lendário";
                }
-                if (winrateResult >= 101)
+                else (winrateResult >= 101)
                  {
                   elo = "Imortal";
                  }
