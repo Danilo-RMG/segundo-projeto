@@ -1,13 +1,13 @@
 let victory = 390;
 let defeat = 270;
-let elo
-let winrate 
 
 function winrateCalculator(victory,defeat) 
  {
    victory - defeat;
     return winrate;
  }
+
+let winrate
 
  function eloCheck()
   {
@@ -41,5 +41,7 @@ function winrateCalculator(victory,defeat)
     }
      return elo;
  } 
+
+let elo 
 
  console.log("Your winrate is " + winrate + ", your elo is " + elo)
